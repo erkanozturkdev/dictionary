@@ -41,7 +41,7 @@ This project was developed with the assistance of Anthropic's Claude AI, which h
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/english-turkish-dictionary.git
+git clone https://github.com/erkanozturkdev/dictionary.git
 ```
 
 2. Install dependencies:
@@ -69,7 +69,7 @@ pnpm dev
 ## 📝 Project Structure
 
 ```
-english-turkish-dictionary/
+dictionary/
 ├── app/
 │   ├── components/
 │   │   └── DictionaryItem.tsx
@@ -86,7 +86,7 @@ english-turkish-dictionary/
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/yourusername/english-turkish-dictionary/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](https://github.com/erkanozturkdev/dictionary/issues).
 
 ## 📄 License
 
