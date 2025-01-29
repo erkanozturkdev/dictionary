@@ -5,17 +5,57 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --hover-bg: rgba(243, 244, 246, 0.5);
+  --border-color: #e5e7eb;
+  --text-secondary: #4b5563;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme='dark'] {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --card-bg: rgba(31, 41, 55, 0.5);
+  --hover-bg: rgba(55, 65, 81, 0.3);
+  --border-color: rgba(75, 85, 99, 0.5);
+  --text-secondary: #9ca3af;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  background-color: #2a2a2a;
+  color: var(--foreground);
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--hover-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}
+
+[data-theme='light'] .custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
 }
